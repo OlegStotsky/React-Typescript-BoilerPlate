@@ -1,5 +1,7 @@
 # React Typescript BoilerPlate
 
+React Typescript Boilerplate enspired by https://medium.com/@viacheslavlushchinskiy/enterprise-react-in-2018-2019-ae6c80c03f1
+
 ## Technological Stack
 
 - **Framework**: [React](https://github.com/facebook/react)
