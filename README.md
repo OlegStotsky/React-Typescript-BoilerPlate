@@ -18,7 +18,7 @@
 
 `yarn run lint` - run tslint
 
-'yarn run build' - generate build
+`yarn run build` - generate build
 
 `yarn run build-prod` - generate production build
 
