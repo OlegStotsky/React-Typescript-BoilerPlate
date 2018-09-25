@@ -13,8 +13,12 @@
 
 ## Scripts
 `yarn run dev-server` - start dev-server
+
 `yarn run test-watch` - run jest in watch mode
+
 `yarn run lint` - run tslint
+
 'yarn run build' - generate build
+
 `yarn run build-prod` - generate production build
 
