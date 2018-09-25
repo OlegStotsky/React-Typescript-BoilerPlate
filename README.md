@@ -4,8 +4,10 @@ React Typescript Boilerplate enspired by https://medium.com/@viacheslavlushchins
 
 ## Technological Stack
 
-- **Framework**: [React](https://github.com/facebook/react)
-- **UI Framework**: [Material-UI](https://github.com/mui-org/material-ui)
+- **Framework**:
+  - [React](https://github.com/facebook/react)
+- **UI Framework**:
+  - [Material-UI](https://github.com/mui-org/material-ui)
 - **State Management**
   - [Redux](https://github.com/reduxjs/redux)
   - [Reselect](https://github.com/reduxjs/reselect) - to optimize perfomance
