@@ -1,4 +1,5 @@
 # React Typescript BoilerPlate
+
 Boilerplate that includes everything you need to develop a beautiful web app out of the box.
 
 ## Technological Stack
@@ -24,10 +25,11 @@ Boilerplate that includes everything you need to develop a beautiful web app out
 - **Bundler**
   - [Webpack](https://github.com/webpack/webpack)
 - **Other**
-  - [Prettier]() - code formatter
-  - [Commitizen]() - to enforce consistent commit style
+  - [Prettier](https://github.com/prettier/prettier) - code formatter
+  - [Commitizen](https://github.com/commitizen/cz-cli) - to enforce consistent commit style
   - [TSLint]() - linter
-  - [Husky]() - precommit hooks
+  - [Husky](https://github.com/typicode/husky) - precommit hooks
+  - [Ramda](https://github.com/ramda/ramda) - functional programming utils
   - [I18next](https://github.com/i18next/i18next) - translation
   - [Moment](https://github.com/moment/moment) - date and time manipulation
   - [Recompose](https://github.com/acdlite/recompose) - HOC utility
@@ -44,3 +46,5 @@ Boilerplate that includes everything you need to develop a beautiful web app out
 `yarn run build` - generate build
 
 `yarn run build-prod` - generate production build
+
+`commit` - commit using commitizen

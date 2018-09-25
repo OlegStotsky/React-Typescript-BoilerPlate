@@ -1,30 +1,30 @@
 Arguments: 
-  /Users/olegstotsky/.nvm/versions/node/v8.2.1/bin/node /usr/local/bin/yarn add sinonjs
+  /usr/local/bin/node /usr/local/bin/yarn add autodux @types/autodux
 
 PATH: 
-  /Users/olegstotsky/.rvm/gems/ruby-2.4.1/bin:/Users/olegstotsky/.rvm/gems/ruby-2.4.1@global/bin:/Users/olegstotsky/.rvm/rubies/ruby-2.4.1/bin:/Users/olegstotsky/.nvm/versions/node/v8.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/olegstotsky/.rvm/bin
+  /Users/olegstotsky/.rvm/gems/ruby-2.4.1/bin:/Users/olegstotsky/.rvm/gems/ruby-2.4.1@global/bin:/Users/olegstotsky/.rvm/rubies/ruby-2.4.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/olegstotsky/.rvm/gems/ruby-2.4.1/bin:/Users/olegstotsky/.rvm/gems/ruby-2.4.1@global/bin:/Users/olegstotsky/.rvm/rubies/ruby-2.4.1/bin:/Users/olegstotsky/.rvm/bin
 
 Yarn version: 
   1.9.4
 
 Node version: 
-  8.2.1
+  10.8.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/sinonjs: Not found
+  Error: https://registry.yarnpkg.com/@types%2fautodux: Not found
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:64202:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:137468:22)
-      at emitTwo (events.js:125:13)
-      at Request.emit (events.js:213:7)
+      at Request.emit (events.js:182:13)
       at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:138440:10)
-      at emitOne (events.js:115:13)
-      at Request.emit (events.js:210:7)
+      at Request.emit (events.js:182:13)
       at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:138362:12)
-      at Object.onceWrapper (events.js:314:30)
-      at emitNone (events.js:110:20)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1081:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
@@ -40,9 +40,11 @@ npm manifest:
       "@types/enzyme": "^3.1.14",
       "@types/enzyme-adapter-react-16": "^1.0.3",
       "@types/jest": "^23.3.2",
+      "@types/moment": "^2.13.0",
       "@types/react": "^16.4.14",
       "@types/react-dom": "^16.0.7",
       "@types/recompose": "^0.26.5",
+      "@types/redux": "^3.6.0",
       "@types/reselect": "^2.2.0",
       "awesome-typescript-loader": "^5.2.1",
       "commitizen": "^2.10.1",
@@ -51,14 +53,20 @@ npm manifest:
       "final-form": "^4.10.0",
       "husky": "^1.0.0-rc.15",
       "jest": "^23.6.0",
+      "moment": "^2.22.2",
       "prettier": "^1.14.3",
       "react": "^16.5.2",
       "react-dom": "^16.5.2",
       "react-final-form": "^3.6.5",
+      "react-redux": "^5.0.7",
       "react-router-dom": "^4.3.1",
       "react-test-renderer": "^16.5.2",
       "recompose": "^0.30.0",
+      "redux": "^4.0.0",
+      "redux-devtools-extension": "^2.13.5",
+      "redux-thunk": "^2.3.0",
       "reselect": "^3.0.1",
+      "sinon": "^6.3.4",
       "ts-jest": "^23.10.1",
       "tslint-config-prettier": "^1.15.0",
       "tslint-eslint-rules": "^5.4.0",
@@ -144,6 +152,30 @@ Lockfile:
       recompose "0.28.0 - 0.30.0"
       warning "^4.0.1"
   
+  "@sinonjs/commons@^1.0.2":
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.0.2.tgz#3e0ac737781627b8844257fadc3d803997d0526e"
+    dependencies:
+      type-detect "4.0.8"
+  
+  "@sinonjs/formatio@3.0.0", "@sinonjs/formatio@^3.0.0":
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/@sinonjs/formatio/-/formatio-3.0.0.tgz#9d282d81030a03a03fa0c5ce31fd8786a4da311a"
+    dependencies:
+      "@sinonjs/samsam" "2.1.0"
+  
+  "@sinonjs/samsam@2.1.0":
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-2.1.0.tgz#b8b8f5b819605bd63601a6ede459156880f38ea3"
+    dependencies:
+      array-from "^2.1.1"
+  
+  "@sinonjs/samsam@^2.1.1":
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-2.1.1.tgz#f352621c24c9e9ab2ed293a7655e8d46bfd64c16"
+    dependencies:
+      array-from "^2.1.1"
+  
   "@types/cheerio@*":
     version "0.22.9"
     resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.9.tgz#b5990152604c2ada749b7f88cab3476f21f39d7b"
@@ -171,6 +203,12 @@ Lockfile:
     dependencies:
       csstype "^2.0.0"
       indefinite-observable "^1.0.1"
+  
+  "@types/moment@^2.13.0":
+    version "2.13.0"
+    resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
+    dependencies:
+      moment "*"
   
   "@types/node@*":
     version "10.11.0"
@@ -207,6 +245,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.26.5.tgz#8496b63c535a60c3584b8b0aca54bfb86679ed70"
     dependencies:
       "@types/react" "*"
+  
+  "@types/redux@^3.6.0":
+    version "3.6.0"
+    resolved "https://registry.yarnpkg.com/@types/redux/-/redux-3.6.0.tgz#f1ebe1e5411518072e4fdfca5c76e16e74c1399a"
+    dependencies:
+      redux "*"
   
   "@types/reselect@^2.2.0":
     version "2.2.0"
@@ -510,6 +554,10 @@ Lockfile:
   array-flatten@^2.1.0:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-2.1.1.tgz#426bb9da84090c1838d812c8150af20a8331e296"
+  
+  array-from@^2.1.1:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/array-from/-/array-from-2.1.1.tgz#cfe9d8c26628b9dc5aecc62a9f5d8f1f352c1195"
   
   array-union@^1.0.1:
     version "1.0.2"
@@ -1650,7 +1698,7 @@ Lockfile:
     version "2.0.4"
     resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   
-  diff@^3.2.0:
+  diff@^3.2.0, diff@^3.5.0:
     version "3.5.0"
     resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
   
@@ -2918,7 +2966,7 @@ Lockfile:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
   
-  invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
+  invariant@^2.0.0, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
     resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
     dependencies:
@@ -3766,6 +3814,10 @@ Lockfile:
       symbol-observable "^1.1.0"
       warning "^3.0.0"
   
+  just-extend@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/just-extend/-/just-extend-3.0.0.tgz#cee004031eaabf6406da03a7b84e4fe9d78ef288"
+  
   keycode@^2.1.9:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.2.0.tgz#3d0af56dc7b8b8e5cba8d0a97f107204eec22b04"
@@ -3867,6 +3919,10 @@ Lockfile:
       p-locate "^3.0.0"
       path-exists "^3.0.0"
   
+  lodash-es@^4.17.5:
+    version "4.17.11"
+    resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.11.tgz#145ab4a7ac5c5e52a3531fb4f310255a152b4be0"
+  
   lodash.debounce@^4.0.8:
     version "4.0.8"
     resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -3878,6 +3934,10 @@ Lockfile:
   lodash.flattendeep@^4.4.0:
     version "4.4.0"
     resolved "https://registry.yarnpkg.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
+  
+  lodash.get@^4.4.2:
+    version "4.4.2"
+    resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   
   lodash.isequal@^4.5.0:
     version "4.5.0"
@@ -3915,6 +3975,10 @@ Lockfile:
     dependencies:
       es6-symbol "^3.1.1"
       object.assign "^4.1.0"
+  
+  lolex@^2.3.2, lolex@^2.7.4:
+    version "2.7.5"
+    resolved "https://registry.yarnpkg.com/lolex/-/lolex-2.7.5.tgz#113001d56bfc7e02d56e36291cc5c413d1aa0733"
   
   longest@^1.0.1:
     version "1.0.1"
@@ -4155,6 +4219,10 @@ Lockfile:
     dependencies:
       minimist "0.0.8"
   
+  moment@*, moment@^2.22.2:
+    version "2.22.2"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+  
   moo@^0.4.3:
     version "0.4.3"
     resolved "https://registry.yarnpkg.com/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
@@ -4258,6 +4326,16 @@ Lockfile:
   nice-try@^1.0.4:
     version "1.0.5"
     resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
+  
+  nise@^1.4.5:
+    version "1.4.5"
+    resolved "https://registry.yarnpkg.com/nise/-/nise-1.4.5.tgz#979a97a19c48d627bb53703726ae8d53ce8d4b3e"
+    dependencies:
+      "@sinonjs/formatio" "3.0.0"
+      just-extend "^3.0.0"
+      lolex "^2.3.2"
+      path-to-regexp "^1.7.0"
+      text-encoding "^0.6.4"
   
   node-fetch@1.6.3:
     version "1.6.3"
@@ -5086,6 +5164,17 @@ Lockfile:
     version "3.0.4"
     resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   
+  react-redux@^5.0.7:
+    version "5.0.7"
+    resolved "http://registry.npmjs.org/react-redux/-/react-redux-5.0.7.tgz#0dc1076d9afb4670f993ffaef44b8f8c1155a4c8"
+    dependencies:
+      hoist-non-react-statics "^2.5.0"
+      invariant "^2.0.0"
+      lodash "^4.17.5"
+      lodash-es "^4.17.5"
+      loose-envify "^1.1.0"
+      prop-types "^15.6.0"
+  
   react-router-dom@^4.3.1:
     version "4.3.1"
     resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
@@ -5201,6 +5290,21 @@ Lockfile:
       hoist-non-react-statics "^2.3.1"
       react-lifecycles-compat "^3.0.2"
       symbol-observable "^1.0.4"
+  
+  redux-devtools-extension@^2.13.5:
+    version "2.13.5"
+    resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.5.tgz#3ff34f7227acfeef3964194f5f7fc2765e5c5a39"
+  
+  redux-thunk@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  
+  redux@*, redux@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
+    dependencies:
+      loose-envify "^1.1.0"
+      symbol-observable "^1.2.0"
   
   regenerator-runtime@^0.10.0:
     version "0.10.5"
@@ -5587,6 +5691,20 @@ Lockfile:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   
+  sinon@^6.3.4:
+    version "6.3.4"
+    resolved "https://registry.yarnpkg.com/sinon/-/sinon-6.3.4.tgz#6f076d7ddcf381af6c16468ac83d30333a756ec8"
+    dependencies:
+      "@sinonjs/commons" "^1.0.2"
+      "@sinonjs/formatio" "^3.0.0"
+      "@sinonjs/samsam" "^2.1.1"
+      diff "^3.5.0"
+      lodash.get "^4.4.2"
+      lolex "^2.7.4"
+      nise "^1.4.5"
+      supports-color "^5.5.0"
+      type-detect "^4.0.8"
+  
   sisteransi@^0.1.1:
     version "0.1.1"
     resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
@@ -5903,7 +6021,7 @@ Lockfile:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
   
-  symbol-observable@^1.0.4, symbol-observable@^1.1.0:
+  symbol-observable@^1.0.4, symbol-observable@^1.1.0, symbol-observable@^1.2.0:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   
@@ -5936,6 +6054,10 @@ Lockfile:
       object-assign "^4.1.0"
       read-pkg-up "^1.0.1"
       require-main-filename "^1.0.1"
+  
+  text-encoding@^0.6.4:
+    version "0.6.4"
+    resolved "https://registry.yarnpkg.com/text-encoding/-/text-encoding-0.6.4.tgz#e399a982257a276dae428bb92845cb71bdc26d19"
   
   theming@^1.3.0:
     version "1.3.0"
@@ -6121,6 +6243,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
     dependencies:
       prelude-ls "~1.1.2"
+  
+  type-detect@4.0.8, type-detect@^4.0.8:
+    version "4.0.8"
+    resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   
   type-is@~1.6.15, type-is@~1.6.16:
     version "1.6.16"
