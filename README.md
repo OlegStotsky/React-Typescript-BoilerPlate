@@ -32,6 +32,7 @@ React Typescript Boilerplate enspired by https://medium.com/@viacheslavlushchins
   - [I18next](https://github.com/i18next/i18next) - translation
   - [Moment](https://github.com/moment/moment) - date and time manipulation
   - [Recompose](https://github.com/acdlite/recompose) - HOC utility
+  - Configured support for mapped paths, read more at http://www.typescriptlang.org/docs/handbook/module-resolution.html
 
 ## Scripts
 
