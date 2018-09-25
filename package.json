@@ -38,6 +38,7 @@
     "build": "webpack",
     "build-prod": "webpack -p --env production",
     "test": "jest",
+    "test-watch": "jest --watch",
     "precommit": "pretty-quick --staged && npm run lint",
     "commit": "npx git-cz",
     "lint": "tslint -c ./tslint.json './src/**/*.ts*'"
