@@ -1,6 +1,5 @@
 # React Typescript BoilerPlate
-
-React Typescript Boilerplate enspired by https://medium.com/@viacheslavlushchinskiy/enterprise-react-in-2018-2019-ae6c80c03f1
+BoilerPlate that includes everything you need to develop a beautiful web app out of the box.
 
 ## Technological Stack
 
