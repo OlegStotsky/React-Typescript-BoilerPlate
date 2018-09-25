@@ -36,6 +36,7 @@
   "scripts": {
     "dev-server": "webpack-dev-server",
     "build": "webpack",
+    "build-prod": "webpack -p --env production",
     "test": "jest",
     "precommit": "pretty-quick --staged && npm run lint",
     "commit": "npx git-cz",
