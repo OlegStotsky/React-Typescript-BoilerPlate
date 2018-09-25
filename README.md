@@ -1,5 +1,5 @@
 # React Typescript BoilerPlate
-BoilerPlate that includes everything you need to develop a beautiful web app out of the box.
+Boilerplate that includes everything you need to develop a beautiful web app out of the box.
 
 ## Technological Stack
 
